@@ -131,7 +131,7 @@ ref = [
      'YOUR_ANTI_DDOS_HAS_BEEN_BYPASSED',
      'YOUR_ANTI_DDOS_HAS_BEEN_BYPASSED']
 
-def main():
+def __main__():
     global ip, port, threads, proxies, method, packet, x
     f = open('proxies.txt','wb')
     r = requests.get("https://api.proxyscrape.com/v2/?request=getproxies&protocol=socks5&timeout=10000&country=all")
